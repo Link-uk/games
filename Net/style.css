@@ -1,0 +1,113 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .img {
+	width: 300px;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.center {
+	text-align: center;
+}
+/* анімація квадрат */
+.square {
+	width: 101px;
+	height: 101px;
+	background-color: #A62991;
+	animation-name: spin;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	position: absolute;
+	left: 450px;
+	top: 60px;
+	animation-delay: 2s;
+}
+@keyframes spin {
+	0% {transform: rotate(0deg)}
+	25% {background-color: #5527c9;border-radius: 10px;}
+	100% {transform: rotate(360deg)}
+}
+
+/* анімація квадрат один і два */
+.one {
+	height: 300px;
+	width: 300px;
+	background-color: #8A2BE2;
+	transition-duration: 0.5s;
+	transform: rotate(0);
+}
+.two {
+	width: 100px;
+	height: 100px;
+	background-color: #ff5f00;
+	transition: all 0.3s;
+}
+.one:hover {
+	transform: rotate(90deg);
+	border-radius: 50%;
+	background-color: #DC9F31;
+}
+.one:hover .two {
+	background-color: #31dc59;
+	border-radius: 50%;
+}
+@media (max-width: 800px) {
+	.textzagol {
+		position: inherit;
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.header-block {
+		flex-direction: column;
+	}
+}
+
+    </style>
+</head>
+<body>
